@@ -1,3 +1,4 @@
+#Line added at the top of the file
 (project in (37612)) AND (((duedate < now() OR duedate = 1d OR "Due Date" < now() OR "Due Date" = 1d OR due < now() OR due =1d) OR status = REOPENED) AND status not in (Resolved, Done, Completed, Closed, Pending, Cancelled, Rejected))
 
 Dear User
