@@ -1,0 +1,15 @@
+(project in (37612)) AND (((duedate < now() OR duedate = 1d OR "Due Date" < now() OR "Due Date" = 1d OR due < now() OR due =1d) OR status = REOPENED) AND status not in (Resolved, Done, Completed, Closed, Pending, Cancelled, Rejected))
+
+Dear User,
+
+Below {{issues.size}} issues are breaching issue "Due Date" by tomorrow or have already breached "Due Date", refer respective issue "Due dates" in last column
+Appreciate if you could take a quick action to close these issues.
+
+|| Key | URL | Summary | Status | Assignee | Due Date ||
+
+{{#issues}}
+|| {{key}} | {{url}} | {{summary}} | {{status.name}} | {{assignee.displayName}} | {{duedate}} {{customfield_13341}} ||
+{{/}}
+
+Best Regards
+ITIO Jira Automation
