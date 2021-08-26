@@ -12,4 +12,4 @@ Appreciate if you could take a quick action to close these issues.
 {{/}}
 
 Best Regards
-ITIO Jira Automation
+ITIO Jira Automation Team
